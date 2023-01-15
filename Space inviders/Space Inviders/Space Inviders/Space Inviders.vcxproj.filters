@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\Animation.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\DrawText.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Enemy.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\EnemyManager.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Main.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Player.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Sources\Ufo.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Images\Background.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Images\End_bg.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Images\Enemy0.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Images\Enemy1.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Images\Enemy2.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Images\Enemy3.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Images\Enemy4.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Images\EnemyBullet.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Images\Explosion.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Images\ExplosionBig.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Images\Font.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Images\Player.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Images\PlayerBullet.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Images\Powerup0.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Images\Powerup1.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Images\Powerup2.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+    <Image Include="Images\Ufo.png">
+      <Filter>Pliki zasobów</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Includes\Animation.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\DrawText.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Enemy.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\EnemyManager.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Global.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Ufo.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes\Player.hpp">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

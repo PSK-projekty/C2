@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Space Inviders: Dokumentacja klasy Ufo</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Space Inviders
+   </div>
+   <div id="projectbrief">Projekt w ramach zajÄ™Ä‡ programowanie w jÄ™zyku C2</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.4 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_ufo.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="class_ufo-members.html">Lista wszystkich skÅ‚adowych</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja klasy Ufo</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie martwe, „dead_animation_over”, ktore wskazuje, czy animacja smierci UFO zostala zakonczona, „explosion_x” i „x”, ktore sa wspolrzednymi x odpowiednio dla eksplozji i UFO, „timer” i „y”, ktore sa licznikiem czasu i wspolrzedna y dla UFO, „powerup_distribution” i „timer_distribution”, ktore sa obiektami klasy „std::uniform_int_distribution” uzywanej do generowania liczb losowych , „powerup_animations” i „powerups”, ktore sa wektorami do przechowywania odpowiednio animacji i ulepszen UFO, „animation” i „explosion”, ktore sa obiektami klasy „Animation”, ktore sa uzywane do animowania UFO i jego eksplozji .  
+ <a href="class_ufo.html#details">WiÄ™cej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_ufo_8hpp_source.html">Ufo.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a11ff5e121125b249ae2b8854f93147ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ufo.html#a11ff5e121125b249ae2b8854f93147ad">Ufo</a> (std::mt19937_64 &amp;i_random_engine)</td></tr>
+<tr class="memdesc:a11ff5e121125b249ae2b8854f93147ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor klasy <a class="el" href="class_ufo.html" title="Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie mar...">Ufo</a>  <a href="class_ufo.html#a11ff5e121125b249ae2b8854f93147ad">WiÄ™cej...</a><br /></td></tr>
+<tr class="separator:a11ff5e121125b249ae2b8854f93147ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d607dbc9578ccf36b89e664740ea91"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ufo.html#a87d607dbc9578ccf36b89e664740ea91">check_bullet_collision</a> (std::mt19937_64 &amp;i_random_engine, const sf::IntRect &amp;i_bullet_hitbox)</td></tr>
+<tr class="memdesc:a87d607dbc9578ccf36b89e664740ea91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, czy pocisk trafil w UFO  <a href="class_ufo.html#a87d607dbc9578ccf36b89e664740ea91">WiÄ™cej...</a><br /></td></tr>
+<tr class="separator:a87d607dbc9578ccf36b89e664740ea91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d4418fdec81a6acbb219a6f71ebca23"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ufo.html#a1d4418fdec81a6acbb219a6f71ebca23">check_powerup_collision</a> (const sf::IntRect &amp;i_player_hitbox)</td></tr>
+<tr class="memdesc:a1d4418fdec81a6acbb219a6f71ebca23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sprawdza, gracz zlapal bonus  <a href="class_ufo.html#a1d4418fdec81a6acbb219a6f71ebca23">WiÄ™cej...</a><br /></td></tr>
+<tr class="separator:a1d4418fdec81a6acbb219a6f71ebca23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80336c603cf1fa7a2fb1b7dc90f1e9bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ufo.html#a80336c603cf1fa7a2fb1b7dc90f1e9bb">draw</a> (sf::RenderWindow &amp;i_window)</td></tr>
+<tr class="memdesc:a80336c603cf1fa7a2fb1b7dc90f1e9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja rysuje <a class="el" href="class_ufo.html" title="Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie mar...">Ufo</a>  <a href="class_ufo.html#a80336c603cf1fa7a2fb1b7dc90f1e9bb">WiÄ™cej...</a><br /></td></tr>
+<tr class="separator:a80336c603cf1fa7a2fb1b7dc90f1e9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f43f1768405ae9c0cad3b449f5e2ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ufo.html#ae9f43f1768405ae9c0cad3b449f5e2ea">reset</a> (bool i_dead, std::mt19937_64 &amp;i_random_engine)</td></tr>
+<tr class="memdesc:ae9f43f1768405ae9c0cad3b449f5e2ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja odpowiada za resetowanie stanu <a class="el" href="class_ufo.html" title="Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie mar...">Ufo</a>.  <a href="class_ufo.html#ae9f43f1768405ae9c0cad3b449f5e2ea">WiÄ™cej...</a><br /></td></tr>
+<tr class="separator:ae9f43f1768405ae9c0cad3b449f5e2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd61d0c0558b4c032295de66f5508ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ufo.html#a5dd61d0c0558b4c032295de66f5508ff">update</a> (std::mt19937_64 &amp;i_random_engine)</td></tr>
+<tr class="memdesc:a5dd61d0c0558b4c032295de66f5508ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualizowanie stanu <a class="el" href="class_ufo.html" title="Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie mar...">Ufo</a>  <a href="class_ufo.html#a5dd61d0c0558b4c032295de66f5508ff">WiÄ™cej...</a><br /></td></tr>
+<tr class="separator:a5dd61d0c0558b4c032295de66f5508ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae15f52d8c220dc51ac91932e1d3da93e"><td class="memItemLeft" align="right" valign="top">sf::IntRect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ufo.html#ae15f52d8c220dc51ac91932e1d3da93e">get_hitbox</a> () const</td></tr>
+<tr class="memdesc:ae15f52d8c220dc51ac91932e1d3da93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca Hitbox <a class="el" href="class_ufo.html" title="Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie mar...">Ufo</a>  <a href="class_ufo.html#ae15f52d8c220dc51ac91932e1d3da93e">WiÄ™cej...</a><br /></td></tr>
+<tr class="separator:ae15f52d8c220dc51ac91932e1d3da93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegÃ³Å‚owy</h2>
+<div class="textblock"><p >Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie martwe, „dead_animation_over”, ktore wskazuje, czy animacja smierci UFO zostala zakonczona, „explosion_x” i „x”, ktore sa wspolrzednymi x odpowiednio dla eksplozji i UFO, „timer” i „y”, ktore sa licznikiem czasu i wspolrzedna y dla UFO, „powerup_distribution” i „timer_distribution”, ktore sa obiektami klasy „std::uniform_int_distribution” uzywanej do generowania liczb losowych , „powerup_animations” i „powerups”, ktore sa wektorami do przechowywania odpowiednio animacji i ulepszen UFO, „animation” i „explosion”, ktore sa obiektami klasy „Animation”, ktore sa uzywane do animowania UFO i jego eksplozji . </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a11ff5e121125b249ae2b8854f93147ad" name="a11ff5e121125b249ae2b8854f93147ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11ff5e121125b249ae2b8854f93147ad">&#9670;&nbsp;</a></span>Ufo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ufo.html">Ufo</a> </td>
+          <td>(</td>
+          <td class="paramtype">std::mt19937_64 &amp;&#160;</td>
+          <td class="paramname"><em>i_random_engine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Konstruktor klasy <a class="el" href="class_ufo.html" title="Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie mar...">Ufo</a> </p>
+<p >Konstruktor klasy <a class="el" href="class_ufo.html" title="Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie mar...">Ufo</a>.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_random_engine</td><td>Generator liczb pseudolosowych</td></tr>
+  </table>
+  </dd>
+</dl>
+<p >Tworzy on nowy obiekt typu "Ufo" i inicjalizuje jego pola.</p>
+<p >"y (BASE_SIZE)" inicjalizuje pole "y" obiektu do wartosci "BASE_SIZE"</p>
+<p >"powerup_distribution (0, POWERUP_TYPES - 1)" tworzy rozklad losowy, ktory bedzie uzywany do wybierania rodzaju powerupow, z zakresu od 0 do (POWERUP_TYPES - 1)</p>
+<p >"timer_distribution (UFO_TIMER_MIN, UFO_TIMER_MAX)" tworzy rozklad losowy, ktory bedzie uzywany do okreslania czasu, po jakim UFO pojawi sie na ekranie, z zakresu od UFO_TIMER_MIN do UFO_TIMER_MAX</p>
+<p >"animation (UFO_ANIMATION_SPEED, 2 * BASE_SIZE, "Images / Ufo.png")" tworzy obiekt "animation" klasy "Animation" z parametrami : predkosci animacji UFO_ANIMATION_SPEED, rozmiaru 2 * BASE_SIZE, oraz pliku obrazu "Images/Ufo.png"</p>
+<p >"explosion (EXPLOSION_ANIMATION_SPEED, 2 * BASE_SIZE, "Images / ExplosionBig.png")" tworzy obiekt "explosion" klasy "Animation" z parametrami : predkosci animacji EXPLOSION_ANIMATION_SPEED, rozmiaru 2 * BASE_SIZE, oraz pliku obrazu "Images/ExplosionBig.png"</p>
+<p >"reset (1, i_random_engine);" wywoluje metode "reset" na nowo utworzonym obiekcie, z parametrem 1, i przekazujac silnik losowy "i_random_engine"</p>
+<p >"for( unsigned char a = 0; a &lt; POWERUP_TYPES; a++ )" petla, ktora iteruje tyle razy, ile jest typow powerupow</p>
+<p >"powerup_animations.push_back (Animation (POWERUP_ANIMATION_SPEED, BASE_SIZE, "Images/Powerup" + std::to_string (static_cast&lt;unsigned short&gt;( a )) + ".png"));" tworzy obiekt "Animation" z parametrami: predkosci animacji POWERUP_ANIMATION_SPEED, rozmiaru BASE_SIZE, oraz pliku obrazu "Images/Powerup" + numer powerupu + ".png", i dodaje go do wektora "powerup_animations".</p>
+<p >W skrocie kod tworzy obiekt <a class="el" href="class_ufo.html" title="Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie mar...">Ufo</a> i inicjalizuje jego pola. Tworzy rozklady losowe </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_random_engine</td><td>Generator liczb pseudolosowych</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji skÅ‚adowych</h2>
+<a id="a87d607dbc9578ccf36b89e664740ea91" name="a87d607dbc9578ccf36b89e664740ea91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d607dbc9578ccf36b89e664740ea91">&#9670;&nbsp;</a></span>check_bullet_collision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool check_bullet_collision </td>
+          <td>(</td>
+          <td class="paramtype">std::mt19937_64 &amp;&#160;</td>
+          <td class="paramname"><em>i_random_engine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const sf::IntRect &amp;&#160;</td>
+          <td class="paramname"><em>i_bullet_hitbox</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza, czy pocisk trafil w UFO </p>
+<p >Ta funkcja jest metoda klasy "Ufo" i nazywa sie "check_bullet_collision".</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_random_engine</td><td>Generator liczb pseudolosowych</td></tr>
+    <tr><td class="paramname">i_bullet_hitbox</td><td>Hitbox pocisku</td></tr>
+  </table>
+  </dd>
+</dl>
+<p >Sluzy ona do sprawdzania czy UFO zostaje trafione przez pocisk, i wykonuje odpowiednie dzialania w przypadku kolizji.</p>
+<p >"if( 0 == dead )" sprawdza czy UFO nie jest juz martwe</p>
+<p >"if( 1 == get_hitbox ().intersects (i_bullet_hitbox) )" sprawdza czy hitbox UFO przecina sie z hitbox pocisku (i_bullet_hitbox). Jesli tak, to warunek jest spelniony</p>
+<p >"dead = 1;" oznacza, ze UFO zostaje zabite</p>
+<p >"explosion_x = x;" zapisuje pozycje x, w ktorej ma byc wyswietlona animacja eksplozji</p>
+<p >"powerups.push_back (Powerup (x + 0.5f * BASE_SIZE, y, powerup_distribution (i_random_engine)));" tworzy nowy obiekt "Powerup" i umieszcza go na pozycji (x + 0.5f * BASE_SIZE, y) oraz wybiera losowy powerup za pomoca rozkladu losowego "powerup_distribution" i przesyla silnik losowy "i_random_engine"</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_random_engine</td><td>Generator liczb pseudolosowych</td></tr>
+    <tr><td class="paramname">i_bullet_hitbox</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd><p class="startdd">1 jesli kolizja zostala wykryta</p>
+<p class="enddd">0 jesli kolizja nie zostala wykryta</p>
+</dd></dl>
+
+</div>
+</div>
+<a id="a1d4418fdec81a6acbb219a6f71ebca23" name="a1d4418fdec81a6acbb219a6f71ebca23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d4418fdec81a6acbb219a6f71ebca23">&#9670;&nbsp;</a></span>check_powerup_collision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned char check_powerup_collision </td>
+          <td>(</td>
+          <td class="paramtype">const sf::IntRect &amp;&#160;</td>
+          <td class="paramname"><em>i_player_hitbox</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sprawdza, gracz zlapal bonus </p>
+<p >Funkcja sprawdzajaca kolizje z bonusem.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_player_hitbox</td><td>Hitbox gracza</td></tr>
+  </table>
+  </dd>
+</dl>
+<p >Funkcjha przechodzi przez wszystkie power-upy i sprawdza czy hitbox gracza i bonusu przecinaja sie. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_player_hitbox</td><td>Hitbox gracza</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd><p class="startdd">0 jesli kolizja nie zostanie wykryta</p>
+<p class="enddd">1+typ jesli kolizja zostanie wykryta</p>
+</dd></dl>
+
+</div>
+</div>
+<a id="a80336c603cf1fa7a2fb1b7dc90f1e9bb" name="a80336c603cf1fa7a2fb1b7dc90f1e9bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80336c603cf1fa7a2fb1b7dc90f1e9bb">&#9670;&nbsp;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void draw </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>i_window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja rysuje <a class="el" href="class_ufo.html" title="Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie mar...">Ufo</a> </p>
+<p >Funkcja jest odpowiedzialna za wyswietlanie ufo w oknie.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_window</td><td>Okno</td></tr>
+  </table>
+  </dd>
+</dl>
+<p >Funkcja rozpoczyna sie od sprawdzenia, czy UFO nie jest martwe, a jesli tak, wywoluje funkcje „draw” na obiekcie animacji w biezacej pozycji UFO x i y. Nastepnie sprawdza, czy martwa animacja sie nie skonczyla, a jesli tak, to wywoluje funkcje „narysuj” na obiekcie eksplozji w biezacej pozycji x i y UFO, kolorem (255, 36, 0). Na koniec funkcja przechodzi przez wszystkie ulepszenia i wywoluje funkcje „dobierz” odpowiednia animacje ulepszenia w biezacej pozycji x i y ulepszenia </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_window</td><td>Okno</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae15f52d8c220dc51ac91932e1d3da93e" name="ae15f52d8c220dc51ac91932e1d3da93e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae15f52d8c220dc51ac91932e1d3da93e">&#9670;&nbsp;</a></span>get_hitbox()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sf::IntRect get_hitbox </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraca Hitbox <a class="el" href="class_ufo.html" title="Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie mar...">Ufo</a> </p>
+<p >Funkcja wykorzystuje biezaca wartosc zmiennej skladowej x, y i BASE_SIZE do utworzenia i zwrocenia obiektu „sf::IntRect”, ktory reprezentuje pole trafienia obiektu UFO.To pole trafienia jest prostokatem, ktorego lewy gorny rog znajduje sie w miejscu, w ktorym znajduje sie UFO, a jego szerokosc i wysokosc wynosza odpowiednio 2 * BASE_SIZE i BASE_SIZE.</p>
+<dl class="section return"><dt>Zwraca</dt><dd>Hibox <a class="el" href="class_ufo.html" title="Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie mar...">Ufo</a></dd></dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Hitbox <a class="el" href="class_ufo.html" title="Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie mar...">Ufo</a></dd></dl>
+
+</div>
+</div>
+<a id="ae9f43f1768405ae9c0cad3b449f5e2ea" name="ae9f43f1768405ae9c0cad3b449f5e2ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9f43f1768405ae9c0cad3b449f5e2ea">&#9670;&nbsp;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reset </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>i_dead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::mt19937_64 &amp;&#160;</td>
+          <td class="paramname"><em>i_random_engine</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja odpowiada za resetowanie stanu <a class="el" href="class_ufo.html" title="Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie mar...">Ufo</a>. </p>
+<p >Funkcja resetuje ufo.Funkcja najpierw ustawia zmienna skladowa „dead” na wartosc argumentu wejsciowego „i_dead”, a zmienna skladowa „dead_animation_over” na 0.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_dead</td><td>Zmienna przechowujaca informacje czy <a class="el" href="class_ufo.html" title="Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie mar...">Ufo</a> zyje</td></tr>
+    <tr><td class="paramname">i_random_engine</td><td>Generator liczb pseudolosowych</td></tr>
+  </table>
+  </dd>
+</dl>
+<p >Nastepnie ustawia zmienne skladowe „explosion_x” i „x” na wartosc stala „SCREEN_WIDTH”. Wykorzystuje generator liczb losowych do generowania nowej wartosci zmiennej skladowej „timer” za pomoca funkcji „timer_distribution”. Resetuje animacje oraz pozycje wybuchu ulepszenia </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_dead</td><td>Zmienna przechowujaca informacje czy <a class="el" href="class_ufo.html" title="Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie mar...">Ufo</a> zyje</td></tr>
+    <tr><td class="paramname">i_random_engine</td><td>Generator liczb pseudolosowych</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5dd61d0c0558b4c032295de66f5508ff" name="a5dd61d0c0558b4c032295de66f5508ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd61d0c0558b4c032295de66f5508ff">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void update </td>
+          <td>(</td>
+          <td class="paramtype">std::mt19937_64 &amp;&#160;</td>
+          <td class="paramname"><em>i_random_engine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Aktualizowanie stanu <a class="el" href="class_ufo.html" title="Klasa zawiera kilka zmiennych skladowych, takich jak „dead”, ktore wskazuje, czy UFO jest obecnie mar...">Ufo</a> </p>
+<p >Funkcja najpierw sprawdza, czy UFO nie jest martwe (martwe = 0).</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_random_engine</td><td>Generator liczb pseudolosowych</td></tr>
+  </table>
+  </dd>
+</dl>
+<p >Jesli nie jest martwy, przesuwa UFO w lewo poprzez zmniejszenie wartosci jego wspolrzednej x o "UFO_MOVE_SPEED". Jesli wspolrzedna x UFO jest mniejsza lub rowna -2 razy „BASE_SIZE”, jest uwazana za poza ekranem, a zmienna martwa jest ustawiona na 1. Aktualizuje rowniez animacje UFO.</p>
+<p >Jesli UFO jest martwe, funkcja sprawdza, czy martwa animacja sie skonczyla (dead_animation_over = 0).Jesli to nie koniec, aktualizuje animacje eksplozji i ustawia „dead_animation_over” na wartosc zwracana przez funkcje aktualizacji.Jesli zmienna „timer” ma wartosc 0, UFO jest resetowane do pierwotnego stanu przez wywolanie funkcji „reset” z argumentami 0 i „i_random_engine”.Jesli licznik czasu nie wynosi 0, jest zmniejszany o 1.</p>
+<p >Nastepnie funkcja przechodzi przez kontener „ulepszen”, przesuwajac kazde ulepszenie w dol o „POWERUP_SPEED” i oznaczajac je jako martwe, jesli zniknie z dolnej czesci ekranu.Aktualizuje rowniez animacje kazdego wzmocnienia.Na koniec usuwa wszystkie martwe ulepszenia z kontenera za pomoca funkcji remove_if. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_random_engine</td><td>Generator liczb pseudolosowych</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_ufo.html">Ufo</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
+</body>
+</html>

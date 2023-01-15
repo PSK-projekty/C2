@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Space Inviders: Plik źródłowy Space Inviders/Includes/Ufo.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Space Inviders
+   </div>
+   <div id="projectbrief">Projekt w ramach zajęć programowanie w języku C2</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.4 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_ufo_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Ufo.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_ufo_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_ufo.html">   12</a></span><span class="keyword">class </span><a class="code hl_class" href="class_ufo.html">Ufo</a>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordtype">bool</span> dead;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordtype">bool</span> dead_animation_over;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">short</span> explosion_x;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">short</span> x;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> timer;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> y;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    std::uniform_int_distribution&lt;unsigned short&gt; powerup_distribution;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    std::uniform_int_distribution&lt;unsigned short&gt; timer_distribution;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    std::vector&lt;Animation&gt; powerup_animations;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    std::vector&lt;Powerup&gt; powerups;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_class" href="class_animation.html">Animation</a> animation;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <a class="code hl_class" href="class_animation.html">Animation</a> explosion;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_function" href="class_ufo.html#a11ff5e121125b249ae2b8854f93147ad">Ufo</a>(std::mt19937_64&amp; i_random_engine);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_ufo.html#a87d607dbc9578ccf36b89e664740ea91">check_bullet_collision</a>(std::mt19937_64&amp; i_random_engine, <span class="keyword">const</span> sf::IntRect&amp; i_bullet_hitbox);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="class_ufo.html#a1d4418fdec81a6acbb219a6f71ebca23">check_powerup_collision</a>(<span class="keyword">const</span> sf::IntRect&amp; i_player_hitbox);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_ufo.html#a80336c603cf1fa7a2fb1b7dc90f1e9bb">draw</a>(sf::RenderWindow&amp; i_window);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_ufo.html#ae9f43f1768405ae9c0cad3b449f5e2ea">reset</a>(<span class="keywordtype">bool</span> i_dead, std::mt19937_64&amp; i_random_engine);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_ufo.html#a5dd61d0c0558b4c032295de66f5508ff">update</a>(std::mt19937_64&amp; i_random_engine);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    sf::IntRect <a class="code hl_function" href="class_ufo.html#ae15f52d8c220dc51ac91932e1d3da93e">get_hitbox</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>};</div>
+<div class="ttc" id="aclass_animation_html"><div class="ttname"><a href="class_animation.html">Animation</a></div><div class="ttdef"><b>Definition:</b> Animation.hpp:9</div></div>
+<div class="ttc" id="aclass_ufo_html"><div class="ttname"><a href="class_ufo.html">Ufo</a></div><div class="ttdoc">Klasa zawiera kilka zmiennych skladowych, takich jak �dead�, ktore wskazuje, czy UFO jest obecnie mar...</div><div class="ttdef"><b>Definition:</b> Ufo.hpp:12</div></div>
+<div class="ttc" id="aclass_ufo_html_a11ff5e121125b249ae2b8854f93147ad"><div class="ttname"><a href="class_ufo.html#a11ff5e121125b249ae2b8854f93147ad">Ufo::Ufo</a></div><div class="ttdeci">Ufo(std::mt19937_64 &amp;i_random_engine)</div><div class="ttdoc">Konstruktor klasy Ufo</div><div class="ttdef"><b>Definition:</b> Ufo.cpp:39</div></div>
+<div class="ttc" id="aclass_ufo_html_a1d4418fdec81a6acbb219a6f71ebca23"><div class="ttname"><a href="class_ufo.html#a1d4418fdec81a6acbb219a6f71ebca23">Ufo::check_powerup_collision</a></div><div class="ttdeci">unsigned char check_powerup_collision(const sf::IntRect &amp;i_player_hitbox)</div><div class="ttdoc">Sprawdza, gracz zlapal bonus</div><div class="ttdef"><b>Definition:</b> Ufo.cpp:94</div></div>
+<div class="ttc" id="aclass_ufo_html_a5dd61d0c0558b4c032295de66f5508ff"><div class="ttname"><a href="class_ufo.html#a5dd61d0c0558b4c032295de66f5508ff">Ufo::update</a></div><div class="ttdeci">void update(std::mt19937_64 &amp;i_random_engine)</div><div class="ttdoc">Aktualizowanie stanu Ufo</div><div class="ttdef"><b>Definition:</b> Ufo.cpp:150</div></div>
+<div class="ttc" id="aclass_ufo_html_a80336c603cf1fa7a2fb1b7dc90f1e9bb"><div class="ttname"><a href="class_ufo.html#a80336c603cf1fa7a2fb1b7dc90f1e9bb">Ufo::draw</a></div><div class="ttdeci">void draw(sf::RenderWindow &amp;i_window)</div><div class="ttdoc">Funkcja rysuje Ufo</div><div class="ttdef"><b>Definition:</b> Ufo.cpp:109</div></div>
+<div class="ttc" id="aclass_ufo_html_a87d607dbc9578ccf36b89e664740ea91"><div class="ttname"><a href="class_ufo.html#a87d607dbc9578ccf36b89e664740ea91">Ufo::check_bullet_collision</a></div><div class="ttdeci">bool check_bullet_collision(std::mt19937_64 &amp;i_random_engine, const sf::IntRect &amp;i_bullet_hitbox)</div><div class="ttdoc">Sprawdza, czy pocisk trafil w UFO</div><div class="ttdef"><b>Definition:</b> Ufo.cpp:72</div></div>
+<div class="ttc" id="aclass_ufo_html_ae15f52d8c220dc51ac91932e1d3da93e"><div class="ttname"><a href="class_ufo.html#ae15f52d8c220dc51ac91932e1d3da93e">Ufo::get_hitbox</a></div><div class="ttdeci">sf::IntRect get_hitbox() const</div><div class="ttdoc">Zwraca Hitbox Ufo</div><div class="ttdef"><b>Definition:</b> Ufo.cpp:195</div></div>
+<div class="ttc" id="aclass_ufo_html_ae9f43f1768405ae9c0cad3b449f5e2ea"><div class="ttname"><a href="class_ufo.html#ae9f43f1768405ae9c0cad3b449f5e2ea">Ufo::reset</a></div><div class="ttdeci">void reset(bool i_dead, std::mt19937_64 &amp;i_random_engine)</div><div class="ttdoc">Funkcja odpowiada za resetowanie stanu Ufo.</div><div class="ttdef"><b>Definition:</b> Ufo.cpp:128</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d7b0ebe6ac517c481d883fa0c773301c.html">Space Inviders</a></li><li class="navelem"><a class="el" href="dir_347c07c78057d2a74b32c988b4e09afc.html">Includes</a></li><li class="navelem"><a class="el" href="_ufo_8hpp.html">Ufo.hpp</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
+</body>
+</html>

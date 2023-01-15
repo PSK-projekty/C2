@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Space Inviders: Plik źródłowy Space Inviders/Includes/Enemy.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Space Inviders
+   </div>
+   <div id="projectbrief">Projekt w ramach zajęć programowanie w języku C2</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.4 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('_enemy_8hpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Enemy.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_enemy_8hpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">/*****************************************************************/</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_enemy.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="class_enemy.html">Enemy</a>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="comment">//Kierunek ruchu przeciwnika</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="comment">//-1 - Left</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="comment">//0 - Down</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="comment">//1 - Right</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keywordtype">char</span> direction;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> health;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">//Przeciwnik staje sie bialy na kilka klatek po trafieniu</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> hit_timer;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> type;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> x;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> y;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_function" href="class_enemy.html#a0970003e64eb6e0c7b71886d0f3931ed">Enemy</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> i_type, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> i_x, <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> i_y);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="class_enemy.html#a650d87c3691c80146cad095cad3b3f7b">get_health</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="class_enemy.html#a1155ac90d974e9dc42c2a0a87772d26d">get_hit_timer</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code hl_function" href="class_enemy.html#aae93c5901bfc189976a469f9dfef4658">get_type</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code hl_function" href="class_enemy.html#a77dfe716b761f10fb5bf2220ecfeeef1">get_x</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code hl_function" href="class_enemy.html#aea25e3034e9f3fc71acbcada34018ef6">get_y</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_enemy.html#ae85c96d8ab4fe9d1b125421eaaef40e2">hit</a>();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_enemy.html#a68c0b61b84e4e095b6463cadc275adae">move</a>();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_enemy.html#ab60f4372ff4cd9e6d6453ff0109c9557">shoot</a>(std::vector&lt;Bullet&gt;&amp; i_enemy_bullets);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_enemy.html#ac5c54df7ed3b930268c8d7752c101725">update</a>();</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    sf::IntRect <a class="code hl_function" href="class_enemy.html#ae15f52d8c220dc51ac91932e1d3da93e">get_hitbox</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>};</div>
+<div class="ttc" id="aclass_enemy_html"><div class="ttname"><a href="class_enemy.html">Enemy</a></div><div class="ttdoc">Klasa reprezentujaca pojedynczego przeciwnika w grze.</div><div class="ttdef"><b>Definition:</b> Enemy.hpp:13</div></div>
+<div class="ttc" id="aclass_enemy_html_a0970003e64eb6e0c7b71886d0f3931ed"><div class="ttname"><a href="class_enemy.html#a0970003e64eb6e0c7b71886d0f3931ed">Enemy::Enemy</a></div><div class="ttdeci">Enemy(unsigned char i_type, unsigned short i_x, unsigned short i_y)</div><div class="ttdoc">Tworzenie nowego preciwnika</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:24</div></div>
+<div class="ttc" id="aclass_enemy_html_a1155ac90d974e9dc42c2a0a87772d26d"><div class="ttname"><a href="class_enemy.html#a1155ac90d974e9dc42c2a0a87772d26d">Enemy::get_hit_timer</a></div><div class="ttdeci">unsigned char get_hit_timer() const</div><div class="ttdoc">Pobiera timer trafienia wroga.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:44</div></div>
+<div class="ttc" id="aclass_enemy_html_a650d87c3691c80146cad095cad3b3f7b"><div class="ttname"><a href="class_enemy.html#a650d87c3691c80146cad095cad3b3f7b">Enemy::get_health</a></div><div class="ttdeci">unsigned char get_health() const</div><div class="ttdoc">Pobiera aktualne zdrowie wroga.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:36</div></div>
+<div class="ttc" id="aclass_enemy_html_a68c0b61b84e4e095b6463cadc275adae"><div class="ttname"><a href="class_enemy.html#a68c0b61b84e4e095b6463cadc275adae">Enemy::move</a></div><div class="ttdeci">void move()</div><div class="ttdoc">Przesuniecie preciwnika</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:83</div></div>
+<div class="ttc" id="aclass_enemy_html_a77dfe716b761f10fb5bf2220ecfeeef1"><div class="ttname"><a href="class_enemy.html#a77dfe716b761f10fb5bf2220ecfeeef1">Enemy::get_x</a></div><div class="ttdeci">unsigned short get_x() const</div><div class="ttdoc">Pobiera wspolrzedna x pozycji wroga.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:60</div></div>
+<div class="ttc" id="aclass_enemy_html_aae93c5901bfc189976a469f9dfef4658"><div class="ttname"><a href="class_enemy.html#aae93c5901bfc189976a469f9dfef4658">Enemy::get_type</a></div><div class="ttdeci">unsigned char get_type() const</div><div class="ttdoc">Pobiera typ wroga.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:52</div></div>
+<div class="ttc" id="aclass_enemy_html_ab60f4372ff4cd9e6d6453ff0109c9557"><div class="ttname"><a href="class_enemy.html#ab60f4372ff4cd9e6d6453ff0109c9557">Enemy::shoot</a></div><div class="ttdeci">void shoot(std::vector&lt; Bullet &gt; &amp;i_enemy_bullets)</div><div class="ttdoc">Powoduje, ze wrog strzela.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:111</div></div>
+<div class="ttc" id="aclass_enemy_html_ac5c54df7ed3b930268c8d7752c101725"><div class="ttname"><a href="class_enemy.html#ac5c54df7ed3b930268c8d7752c101725">Enemy::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Aktualizuje wroga.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:118</div></div>
+<div class="ttc" id="aclass_enemy_html_ae15f52d8c220dc51ac91932e1d3da93e"><div class="ttname"><a href="class_enemy.html#ae15f52d8c220dc51ac91932e1d3da93e">Enemy::get_hitbox</a></div><div class="ttdeci">sf::IntRect get_hitbox() const</div><div class="ttdoc">Pobiera hitboxa wroga.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:132</div></div>
+<div class="ttc" id="aclass_enemy_html_ae85c96d8ab4fe9d1b125421eaaef40e2"><div class="ttname"><a href="class_enemy.html#ae85c96d8ab4fe9d1b125421eaaef40e2">Enemy::hit</a></div><div class="ttdeci">void hit()</div><div class="ttdoc">Trafienie</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:75</div></div>
+<div class="ttc" id="aclass_enemy_html_aea25e3034e9f3fc71acbcada34018ef6"><div class="ttname"><a href="class_enemy.html#aea25e3034e9f3fc71acbcada34018ef6">Enemy::get_y</a></div><div class="ttdeci">unsigned short get_y() const</div><div class="ttdoc">Pobiera wspolrzedna y pozycji wroga.</div><div class="ttdef"><b>Definition:</b> Enemy.cpp:68</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d7b0ebe6ac517c481d883fa0c773301c.html">Space Inviders</a></li><li class="navelem"><a class="el" href="dir_347c07c78057d2a74b32c988b4e09afc.html">Includes</a></li><li class="navelem"><a class="el" href="_enemy_8hpp.html">Enemy.hpp</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
+</body>
+</html>

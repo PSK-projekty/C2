@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.4"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Space Inviders: Dokumentacja klasy EnemyManager</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Space Inviders
+   </div>
+   <div id="projectbrief">Projekt w ramach zajęć programowanie w języku C2</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.4 -->
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('class_enemy_manager.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="class_enemy_manager-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja klasy EnemyManager</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa zarzadzajaca przeciwnikami - tworzenie nowych przeciwnikow, ich ruch, strzelanie oraz kolizje z graczem.  
+ <a href="class_enemy_manager.html#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_enemy_manager_8hpp_source.html">EnemyManager.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a7325855b454205d3c5cc4540504759f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#a7325855b454205d3c5cc4540504759f5">EnemyManager</a> ()</td></tr>
+<tr class="memdesc:a7325855b454205d3c5cc4540504759f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tworzy nowy obiekt klasy <a class="el" href="class_enemy_manager.html" title="Klasa zarzadzajaca przeciwnikami - tworzenie nowych przeciwnikow, ich ruch, strzelanie oraz kolizje z...">EnemyManager</a>, inicjuje zmienne i przygotowuje tekstury i animacje przeciwnikow.  <a href="class_enemy_manager.html#a7325855b454205d3c5cc4540504759f5">Więcej...</a><br /></td></tr>
+<tr class="separator:a7325855b454205d3c5cc4540504759f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf062d637e19842ab3f80181d2dacf5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#a4bf062d637e19842ab3f80181d2dacf5">reached_player</a> (unsigned short i_player_y) const</td></tr>
+<tr class="memdesc:a4bf062d637e19842ab3f80181d2dacf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda sprawdza czy przeciwnicy dotarli do poziomu gracza na ekranie  <a href="class_enemy_manager.html#a4bf062d637e19842ab3f80181d2dacf5">Więcej...</a><br /></td></tr>
+<tr class="separator:a4bf062d637e19842ab3f80181d2dacf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80336c603cf1fa7a2fb1b7dc90f1e9bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#a80336c603cf1fa7a2fb1b7dc90f1e9bb">draw</a> (sf::RenderWindow &amp;i_window)</td></tr>
+<tr class="memdesc:a80336c603cf1fa7a2fb1b7dc90f1e9bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda rysuje przeciwnikow i ich pociski na ekranie  <a href="class_enemy_manager.html#a80336c603cf1fa7a2fb1b7dc90f1e9bb">Więcej...</a><br /></td></tr>
+<tr class="separator:a80336c603cf1fa7a2fb1b7dc90f1e9bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7182ccee5c58e757f0de86373289c335"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#a7182ccee5c58e757f0de86373289c335">reset</a> (unsigned short i_level)</td></tr>
+<tr class="memdesc:a7182ccee5c58e757f0de86373289c335"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda resetuje stan przeciwnikow - tworzy nowych przeciwnikow i czysci wektory pociskow przeciwnikow i przeciwnikow  <a href="class_enemy_manager.html#a7182ccee5c58e757f0de86373289c335">Więcej...</a><br /></td></tr>
+<tr class="separator:a7182ccee5c58e757f0de86373289c335"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dd61d0c0558b4c032295de66f5508ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#a5dd61d0c0558b4c032295de66f5508ff">update</a> (std::mt19937_64 &amp;i_random_engine)</td></tr>
+<tr class="memdesc:a5dd61d0c0558b4c032295de66f5508ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda aktualizuje stan przeciwnikow - ich ruch, strzelanie oraz kolizje z graczem  <a href="class_enemy_manager.html#a5dd61d0c0558b4c032295de66f5508ff">Więcej...</a><br /></td></tr>
+<tr class="separator:a5dd61d0c0558b4c032295de66f5508ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0cc6335ee05a0810faef94c164733e7"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="struct_bullet.html">Bullet</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#af0cc6335ee05a0810faef94c164733e7">get_enemy_bullets</a> ()</td></tr>
+<tr class="memdesc:af0cc6335ee05a0810faef94c164733e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca referencje do wektora kul przeciwnikow  <a href="class_enemy_manager.html#af0cc6335ee05a0810faef94c164733e7">Więcej...</a><br /></td></tr>
+<tr class="separator:af0cc6335ee05a0810faef94c164733e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa36e95ea5734bc8d26db99f3fd15f36f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_enemy.html">Enemy</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy_manager.html#aa36e95ea5734bc8d26db99f3fd15f36f">get_enemies</a> ()</td></tr>
+<tr class="memdesc:aa36e95ea5734bc8d26db99f3fd15f36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zwraca referencje do wektora przeciwnikow  <a href="class_enemy_manager.html#aa36e95ea5734bc8d26db99f3fd15f36f">Więcej...</a><br /></td></tr>
+<tr class="separator:aa36e95ea5734bc8d26db99f3fd15f36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p >Klasa zarzadzajaca przeciwnikami - tworzenie nowych przeciwnikow, ich ruch, strzelanie oraz kolizje z graczem. </p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a7325855b454205d3c5cc4540504759f5" name="a7325855b454205d3c5cc4540504759f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7325855b454205d3c5cc4540504759f5">&#9670;&nbsp;</a></span>EnemyManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_enemy_manager.html">EnemyManager</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tworzy nowy obiekt klasy <a class="el" href="class_enemy_manager.html" title="Klasa zarzadzajaca przeciwnikami - tworzenie nowych przeciwnikow, ich ruch, strzelanie oraz kolizje z...">EnemyManager</a>, inicjuje zmienne i przygotowuje tekstury i animacje przeciwnikow. </p>
+<p >Jest to konstruktor klasy.</p>
+<p >Tworzy obiekt klasy i inicjalizuje wartosci poczatkowe. Inicjalizowane sa zmienne i obiekty klasy, takie jak obiekt klasy "Animation" i obiekt "sf::Sprite" odpowiedzialny za rysowanie pociskow wrogow. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="a80336c603cf1fa7a2fb1b7dc90f1e9bb" name="a80336c603cf1fa7a2fb1b7dc90f1e9bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80336c603cf1fa7a2fb1b7dc90f1e9bb">&#9670;&nbsp;</a></span>draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void draw </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow &amp;&#160;</td>
+          <td class="paramname"><em>i_window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda rysuje przeciwnikow i ich pociski na ekranie </p>
+<p >Funkcja jest odpowiedzialna za rysowanie wszystkich pociskow i przeciwnikow w grze.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_window</td><td>Okno na ktorym rysujemy</td></tr>
+  </table>
+  </dd>
+</dl>
+<p >W petli jest przegladana tablica enemy_bullets i kazdy pocisk jest rysowany na ekranie. Nastepnie jest przegladana tablica enemies, a kazdy przeciwnik jest rysowany na ekranie. Jesli przeciwnik zostanie trafiony, zostanie wyswietlony na bialo przez okreslony czas. Kolory przeciwnikow sa rowniez ustawiane w zaleznosci od ich typu. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_window</td><td>Okno na ktorym rysujemy</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa36e95ea5734bc8d26db99f3fd15f36f" name="aa36e95ea5734bc8d26db99f3fd15f36f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa36e95ea5734bc8d26db99f3fd15f36f">&#9670;&nbsp;</a></span>get_enemies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="class_enemy.html">Enemy</a> &gt; &amp; get_enemies </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraca referencje do wektora przeciwnikow </p>
+<p >Runkcja zwracajaca referencje do wektora przechowujacego przeciwnikow, aby miec dostep do niego w innych klasach.</p>
+<dl class="section return"><dt>Zwraca</dt><dd>Referencja do wektora przeciwnikow</dd></dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Referencja do przeciwnikow</dd></dl>
+
+</div>
+</div>
+<a id="af0cc6335ee05a0810faef94c164733e7" name="af0cc6335ee05a0810faef94c164733e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0cc6335ee05a0810faef94c164733e7">&#9670;&nbsp;</a></span>get_enemy_bullets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="struct_bullet.html">Bullet</a> &gt; &amp; get_enemy_bullets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zwraca referencje do wektora kul przeciwnikow </p>
+<p >Funkcja zwracajaca referencje do wektora przechowujacego pociski przeciwnikow, aby miec dostep do niego w innych klasach.</p>
+<dl class="section return"><dt>Zwraca</dt><dd>Referencja do wektora kul przeciwnikow</dd></dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Referencja do wektora pociskow przeciwnikow</dd></dl>
+
+</div>
+</div>
+<a id="a4bf062d637e19842ab3f80181d2dacf5" name="a4bf062d637e19842ab3f80181d2dacf5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf062d637e19842ab3f80181d2dacf5">&#9670;&nbsp;</a></span>reached_player()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool reached_player </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>i_player_y</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda sprawdza czy przeciwnicy dotarli do poziomu gracza na ekranie </p>
+<p >Ta funkcja sprawdza czy przeciwnicy dotarli do gracza.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_player_y</td><td>Pozycja y gracza</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>True jesli przeciwnicy dotarli do gracza, false w przeciwnym wypadku</dd></dl>
+<p >Funkcja przyjmuje pozycje gracza jako argument i zwraca true, jesli przeciwnicy dotarli do gracza lub false jesli nie dotarli. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_player_y</td><td>Pozycja gracza</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>True jesli przeciwnicy dotarli do gracza</dd></dl>
+
+</div>
+</div>
+<a id="a7182ccee5c58e757f0de86373289c335" name="a7182ccee5c58e757f0de86373289c335"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7182ccee5c58e757f0de86373289c335">&#9670;&nbsp;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void reset </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short&#160;</td>
+          <td class="paramname"><em>i_level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda resetuje stan przeciwnikow - tworzy nowych przeciwnikow i czysci wektory pociskow przeciwnikow i przeciwnikow </p>
+<p >Funkcja odpowiedzialna za ustawienie wszystkich zmiennych i elementow na poczatkowe wartosci.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_level</td><td>Poziom</td></tr>
+  </table>
+  </dd>
+</dl>
+<p >Jest wywolywana na poczatku gry lub po przejsciu na kolejny poziom. Ta funkcja resetuje poziom gry a takze odpowiada za rozklad przeciwnikow na kolejnych poziomach. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_level</td><td>Numer poziomu</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5dd61d0c0558b4c032295de66f5508ff" name="a5dd61d0c0558b4c032295de66f5508ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dd61d0c0558b4c032295de66f5508ff">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void update </td>
+          <td>(</td>
+          <td class="paramtype">std::mt19937_64 &amp;&#160;</td>
+          <td class="paramname"><em>i_random_engine</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metoda aktualizuje stan przeciwnikow - ich ruch, strzelanie oraz kolizje z graczem </p>
+<p >Ta funkcja aktualizuje pozycje przeciwnikow i pociskow.</p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_random_engine</td><td>Silnik losowosci do generowania momentow strzelania przez przeciwnikow</td></tr>
+  </table>
+  </dd>
+</dl>
+<p >Sprawdza takze, czy gracz zostal trafiony przez pocisk przeciwnika. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i_random_engine</td><td>Silnik losowosci</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_enemy_manager.html">EnemyManager</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
+</body>
+</html>
